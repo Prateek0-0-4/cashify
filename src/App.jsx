@@ -1,26 +1,35 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-import  Navbar  from './assets/Navbar'
-import Home from './assets/Home'
-import Slider from './assets/Slider'
-import A from './assets/A'
-import Drop from './assets/Drop'
+import React from 'react';
+import './App.css';
+import Navbar from './Nav & Footer/Navbar';
+import Service from './Devices/Service';
+import OldDevice from './Devices/OldDevice';
+import RefurbishedDevice from './Devices/RefurbishedDevice';
+import RefurbishedLaptops from './Devices/RefurbishedLaptops';
+import Store from './Store';
+import Slider from './Slider';
+import Marque from './Marque';
+import Deals from './Devices/Deals';
+import Download from './Devices/Download';
+import Footer from './Nav & Footer/Footer';
+
+
 
 function App() {
-
   return (
     <>
-  <BrowserRouter>
-  {/* <Navbar/> */}
-  {/* <A/> */}
-  <Routes>
-    <Route path="/" element={<Home/>}/>
-  </Routes>
-  </BrowserRouter>
-  
+      <Navbar />
+      <Slider />
+      <Service />
+      <OldDevice />
+      <RefurbishedDevice />
+      <RefurbishedLaptops />
+      <Store />
+      <Marque />
+      <Deals />
+      <Download />
+      <Footer/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
